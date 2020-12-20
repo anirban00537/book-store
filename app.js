@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const app = express();
 const indexRouter = require("./routes/index");
 const authorRouter = require("./routes/author");
+const bookRouter = require("./routes/books");
 const bodyParser = require("body-parser");
 
 //dependencies
@@ -35,6 +36,7 @@ const port = process.env.PORT || 5000;
 
 app.use("/", indexRouter);
 app.use("/authors", authorRouter);
+app.use("/books", bookRouter);
 
 app.listen(port, () => {
   console.log(`server is running on localhost:${port}`);
