@@ -1,11 +1,16 @@
-<header>
-    <nav>
-        <a href="/">MyLybrary</a>
-        <ul>
-            <li><a href="/authors">Authors</a></li>
-            <li><a href="/authors/new">Add Author</a></li>
-            <li><a href="/books">Books</a></li>
-            <li><a href="/books/new">Add New Books</a></li>
-        </ul>
+<header class="text-gray-700 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a href="/" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">MyLibs</span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <a href="/authors" class="mr-5 hover:text-gray-900">Author</a>
+      <a href="/authors/new" class="mr-5 hover:text-gray-900">Add Author</a>
+      <a href="/books" class="mr-5 hover:text-gray-900">Books</a>
+      <a href="/books/new" class="mr-5 hover:text-gray-900">Add Books</a>
     </nav>
+  </div>
 </header>

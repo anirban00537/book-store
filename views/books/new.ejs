@@ -1,10 +1,9 @@
-<h2>New Book</h2>
-
-
 <form action="/books" method="POST" enctype="multipart/form-data">
     <%- include('_form_field') %>
     <a href="/books">
         Cancel
     </a>
-    <button type="submit"> Create</button>
+    <div class="p-2 w-full">
+        <button type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+      </div>
 </form>
